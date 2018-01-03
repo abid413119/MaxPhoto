@@ -1,0 +1,228 @@
+/*------------------- Requerments ---------------------*/
+/*
+
+color 
+============================
+Porcelain          : #e6eaec; 
+Alizarin Crimson   : #DE2323;
+
+fonts
+========s====================
+font-family        : Montserrat-Bold, Montserrat-Regular, Poppins-Regular(menu)
+
+*/
+
+
+/*=======================================
+    ------ Reuseable Component -----
+=========================================*/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    max-width: 80%;
+    margin: 0 auto;
+}
+.btn{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 6px 20px;
+    border: 1px solid #b1b1b1;
+    border-radius: 20px;
+    letter-spacing: -.5px;
+}
+.btn-white {
+    color: rgba(0, 0, 0, 0.63);
+}
+.btn-color{
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #DE2323;
+    border: 1px solid transparent;
+    box-shadow: 0 0 3px #DE2323, 1px 1px 3px #DE2323;
+}
+h3{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+/*=======================================
+    ------ Header -----
+=========================================*/
+header {
+    background-color: #e6eaec; 
+    height: 500px;
+    width: 100%;
+}
+.header-content-wrapper{
+    height: 100%;
+}
+
+.header-menu{
+    padding: 40px 0;
+}
+
+.header-logo{
+    float: left;
+}
+
+.header-buttons{
+    float: right;
+}
+.header-buttons a:last-child{
+    margin-left: 15px
+}
+
+.header-item-container{
+    padding-top: 60px;
+}
+
+.item-box{
+    display: flex;
+}
+
+.item-box-1{
+    flex: 1;
+}
+.item-box-1 img{
+    padding-top: 120px;
+}
+.item-box-2{
+    flex: 2;
+    text-align: center
+}
+.item-box-2 .search-bar input[type=text]{
+    width: 60%;
+    margin-left: 20px;
+    padding: 12px 18px;
+    border: none;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    box-shadow: 0 0 3px #c9c9c9, 0px 0px 3px #c1c1c1;
+}
+.item-box-2 .search-bar input[type=submit]{
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    padding: 11px 18px;
+}
+.item-box-2 img {
+    padding-bottom: 50px
+}
+.item-box-2 h3{
+    
+    
+    letter-spacing: 15px;
+    padding-left: 34px;
+    margin-top: 40px;;
+    
+}
+
+
+.item-box-3{
+    text-align: right;
+    flex: 1;
+}
+.item-box-3 img {
+    padding: 100px 20px 0 0;
+}
+
+
+section{
+    position: relative;
+}
+
+#curve {
+    position: absolute;
+    bottom: -270px;
+}
+
+/*=======================================
+    ------ Gallary -----
+=========================================*/
+
+#gallary{
+    max-height: 700px;
+}
+
+.gallary-wrapper{
+
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.gallary-menu{
+	grid-column: 1/4;
+    
+}
+.gallary-menu ul {
+    list-style-type: none;
+}
+.gallary-menu ul li {
+    display: block;
+    padding: 20px 0;
+}
+.gallary-menu ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+}
+
+.gallary-items{
+	grid-column: 4/13;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.gallary-column{
+    flex: 33%;
+    max-width: 30%;
+    padding: 0 8px;
+}
+.gallary-items img{
+    margin-top: 14px;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+footer{
+    position: relative;
+}
+.copyright{
+    position: absolute;
+    bottom: 30px;
+    left: 180px;
+}
+.copyright h3{
+    letter-spacing: 10px;
+}
+.copyright h4{
+    text-transform: uppercase;
+    font-size: 12px;
+    word-spacing: 3px;
+}
+.copyright h4 span{
+    color: #DE2323;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
